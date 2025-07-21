@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Exchange Rate Chart</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>📊 Exchange Rate Chart (Past Year)</header>
+  <div class="container">
+    <section>
+      <div class="flag-select">
+        <img id="from-chart-flag" src="flags/in.png" alt="From Flag" />
+        <label for="fromChart">From:</label>
+        <select id="fromChart"></select>
+      </div>
+
+      <div class="flag-select">
+        <img id="to-chart-flag" src="flags/us.png" alt="To Flag" />
+        <label for="toChart">To:</label>
+        <select id="toChart"></select>
+      </div>
+
+      <button onclick="loadChart()">Show Chart</button>
+    </section>
+
+    <section>
+      <canvas id="rateChart" height="100"></canvas>
+    </section>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

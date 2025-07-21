@@ -1,0 +1,137 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #f0f4f8, #d9e2ec);
+    color: #102a43;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #243b53;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.8rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+label {
+    display: block;
+    margin: 12px 0 6px;
+    font-weight: 600;
+    color: #334e68;
+}
+
+select, input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 16px;
+    border: 1px solid #cbd5e0;
+    border-radius: 6px;
+    font-size: 1rem;
+    background: #f7fafc;
+    color: #102a43;
+    cursor: pointer;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #3a8fd0;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2f70a3;
+}
+
+.result {
+    font-size: 1.4rem;
+    margin-top: 20px;
+    color: #1a202c;
+    font-weight: bold;
+    text-align: center;
+}
+
+.flag-select {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.flag-select img {
+    width: 36px;
+    height: 24px;
+    object-fit: cover;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+canvas {
+    margin-top: 40px;
+    max-width: 100%;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+}
+
+.chart-tooltip {
+    background-color: #243b53 !important;
+    color: #ffffff !important;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    border: 1px solid #cbd5e0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    text-align: center;
+    max-width: 200px;
+}
+
+footer {
+    background: #334e68;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    font-size: 0.9rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .flag-select {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header {
+        font-size: 1.4rem;
+        padding: 15px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
